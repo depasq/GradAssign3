@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/random.css">
+    <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+    <script type="text/javascript">jwplayer.key="wKtnb2kECX5WsvZUT5FIaYQi41eDAvLkUUtMgg==";</script>
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+    <script src="js/random.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Joseph DePasquale - CSCI E-3 Graduate Assignment 3</h1>
+      <p>For Graduate Assignment 3, I've created a page that loads the currently most popular YouTube video into a jwplayer.
+         When the page is loaded, it automatically looks for and loads the most popular video from YouTube and adds the video's title and description to the page. In the process of developing
+         the project, I created a new account with JWPlayer and am using my own self-hosted player key. Additionally, I needed to create a
+         Google Developer project and generate an API key that is used when making the AJAX call
+         to search YouTube. I had initially intended to create a random video generator but decided to scale it back for this project to
+         simply the most popular video as a demonstration of what is possible. </p>
+      <p>
+         I was planning to use Google's javascript API to code the YouTube search reqeust, but after a lot of research into how to use the API,
+         and doing test calls with Google's tools, I decided that a simple AJAX call with a properly formatted URL was the best approach since this project does not require user authentication. Once the
+         results are available in JSON format, it's just a matter of pulling out the relevant details and loading the video's URL into the jwplayer. For this example, I've added div elements to the
+         html to hold the title and description that are later inserted via jquery. And of course, now that the video is loaded into jwplayer, all of the jwplayer
+         API capabilities are opened up so the page can be customized even further. I've added custom seek buttons to advance or go back 20 seconds in the video. 
+      </p>
+
+      <h4><br>
+      <div id="title"></div>
+      <div id="description"></div>
+      <div id="playerDiv">Video Will Appear Here</div><br />
+          <div id="controls">Custom Controls:
+              <button id="seekF">Fwd 20s</button>
+              <button id="seekB">Back 20s</button>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

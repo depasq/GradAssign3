@@ -1,0 +1,17 @@
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.428571429;
+    background-color: lightgray;
+	color: #333;
+}
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+h4 {
+	border-top: 1px solid black;
+	padding-top: 1em;
+	width: 95%;
+}
